@@ -6,4 +6,5 @@ describe(" ", () => {
     let foxy = new Foxy();
     expect()
   });
+
 });
