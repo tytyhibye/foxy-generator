@@ -1,10 +1,12 @@
 import { Foxy } from '../src/api.js'
 
-describe(" ", () => {
+describe("Foxy", () => {
 
-  test ("should show a picture of fox when the button is clicked", () => {
-    let foxy = new Foxy();
-    expect()
+  test ('should generate a random number between 0-195', () => {
+    let test1 = new Foxy();
+    let testArr = [1,2,3];
+    test1.randomNumber(testArr.length);
+    expect(test1.randomNumber(testArr.length)).toEqual()
   });
 
 });

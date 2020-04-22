@@ -10,7 +10,7 @@ $(document).ready(function () {
     (async () => {
       let foxy = new Foxy();
       const response = await foxy.getFoxImage();
-      console.log('response: ', response);
+      // console.log('response: ', response);
       getElements(response);
     })();
 
