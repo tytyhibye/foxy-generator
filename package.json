@@ -1,17 +1,17 @@
 {
-  "name": "my-project",
+  "name": "foxy-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_",
   "main": "main.js",
   "scripts": {
     "build": "webpack --mode development",
-    "start": "npm run build; webpack-dev-server --open --mode development",
+    "start": "npm run build && webpack-dev-server --open --mode development",
     "lint": "eslint src/*.js",
     "test": "jest --coverage",
     "debug": "node --inspect node_modules/.bin/jest --runInBand"
   },
   "keywords": [],
-  "author": "Tyler Bates",
+  "author": "Tyler Bates & Chisato Murukami",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.6.4",
@@ -33,5 +33,13 @@
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
     "popper.js": "^1.15.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tytyhibye/foxy-generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tytyhibye/foxy-generator/issues"
+  },
+  "homepage": "https://github.com/tytyhibye/foxy-generator#readme"
 }
