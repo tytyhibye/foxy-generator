@@ -1,6 +1,6 @@
 export class Foxy {
   async getFoxImage() {
-    // console.log('process.env.API_KEY: ', process.env.API_KEY);
+   
     try {
       // let response = await fetch(`https://randomfox.ca/floof/`);
       // https://www.potterapi.com/v1/characters?key=${process.env.API_KEY}
@@ -23,7 +23,5 @@ export class Foxy {
   }
 
   
-  randomNumber(max) {
-    return Math.floor(Math.random() * Math.floor(max));
-  }
+  
 }

@@ -2,21 +2,19 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import $ from "jquery";
-import { Foxy } from './api.js';
+import { Foxy } from './image.js';
+export { Wizzy } from './name.js';
 
 $(document).ready(function () {
   $('#foxButton').click(function () {
-    
     (async () => {
       let foxy = new Foxy();
       const response = await foxy.getFoxImage();
       // console.log('response: ', response);
       getElements(response);
     })();
-
     function getElements(response) {
       if (response) {
-
         let imageLink = response.image;
         // let name = response[1].name; 
         // $().html(`<img src=${imageLink} />`)
@@ -25,7 +23,11 @@ $(document).ready(function () {
         $('.foxImage').text('Uh oh, something went wrong. Please refresh and try again.')
       }
     }
-  });
+    $('#foxButton').fadeOut(300);
+    $('#wizButton').fadeIn(1500);
+  }
+  
+//   });
 });
 
 // $2a$10$BU9J1FskYFj9Tr2aWZ5Rw.3oU/34XYSJhNMGNUBF01RL7u2VTXWVa

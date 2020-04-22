@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1587590192186" clover="3.2.0">
-  <project timestamp="1587590192186" name="All files">
+<coverage generated="1587590454836" clover="3.2.0">
+  <project timestamp="1587590454836" name="All files">
     <metrics statements="8" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="1" elements="14" coveredelements="2" complexity="0" loc="8" ncloc="8" packages="1" files="1" classes="1"/>
     <file name="api.js" path="C:\Users\conno_000\Desktop\Epicodus\foxy-generator\src\api.js">
       <metrics statements="8" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="1"/>
