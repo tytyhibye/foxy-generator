@@ -4,11 +4,19 @@ body {
   background-repeat: no-repeat;
   text-align: center;
   padding: auto;
+  color: rgb(0, 0, 0);
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 12px rgb(40, 229, 235), 0px 0px 12px #fff;
 }
 .jumbotron {
   background-image: url("https://image.freepik.com/free-vector/ocean-view-edge-forest-illustration_80802-126.jpg");
   background-color: rgba(240, 248, 255, 0);
   background-size: cover;
+  border-style: double;
+  border-width: 10px;
+  border-color: rgb(255, 209, 111);
 }
 img {
   width: 60%;
@@ -34,41 +42,134 @@ img {
 
 @-webkit-keyframes bounceInDown {
   0% {
-     opacity: 0;
-     -webkit-transform: translateY(-2000px);
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
   }
   60% {
-     opacity: 1;
-     -webkit-transform: translateY(30px);
+    opacity: 1;
+    -webkit-transform: translateY(30px);
   }
   80% {
-     -webkit-transform: translateY(-10px);
+    -webkit-transform: translateY(-10px);
   }
   100% { 
-     -webkit-transform: translateY(0);
+    -webkit-transform: translateY(0);
   }
 }
 
 @keyframes bounceInDown {
   0% {
-     opacity: 0;
+    opacity: 0;
      transform: translateY(-2000px);
+    }
+    60% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    80% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
-  60% {
-     opacity: 1;
-     transform: translateY(30px);
-  }
-  80% {
-     transform: translateY(-10px);
-  }
-  100% {
-     transform: translateY(0);
-  }
+  
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
 }
 
 .bounceInDown {
   -webkit-animation-name: bounceInDown;
   animation-name: bounceInDown;
+}
+
+@-webkit-keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0);
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0);
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0);
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInRight {
+  -webkit-animation-name: bounceInRight;
+  animation-name: bounceInRight;
+}
+
+.btn-animated {
+  -webkit-animation-duration: 7s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }
 
 #titleText {
@@ -86,6 +187,28 @@ img {
 #subText {
   font-family: Georgia;
 }
+@keyframes blur {
+  from {
+    box-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px rgb(93, 182, 170),
+      0px 0px 150px rgb(93, 182, 170),
+      0px 10px 100px rgb(93, 182, 170),
+      0px 10px 100px rgb(93, 182, 170),
+      0px 10px 100px rgb(93, 182, 170),
+      0px 10px 100px rgb(93, 182, 170),
+      0px -10px 100px rgb(93, 182, 170),
+      0px -10px 100px rgb(93, 182, 170);
+  }
+}
 #foxButton {
   padding: auto;
   width: auto;
@@ -94,10 +217,10 @@ img {
   letter-spacing: 1px;
   font-weight: 700;
   text-transform: uppercase;
-  text-shadow: 0px 0px 12px rgb(255, 251, 0), 0px 0px 12px #fff;
+  text-shadow: 0px 0px 12px rgb(0, 255, 213), 0px 0px 12px #fff;
   font-size: 21px;
   cursor: pointer;
-  background-color: rgb(204, 92, 1);
+  background-color: rgb(0, 87, 90);;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   animation: blur 8s ease-in-out;
@@ -113,10 +236,10 @@ img {
   letter-spacing: 1px;
   font-weight: 700;
   text-transform: uppercase;
-  text-shadow: 0px 0px 12px rgb(255, 251, 0), 0px 0px 12px #fff;
+  text-shadow: 0px 0px 12px rgb(0, 255, 213), 0px 0px 12px #fff;
   font-size: 21px;
   cursor: pointer;
-  background-color: rgb(204, 92, 1);
+  background-color: rgb(0, 87, 90);;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   animation: blur 8s ease-in-out;
@@ -132,10 +255,10 @@ img {
   letter-spacing: 1px;
   font-weight: 700;
   text-transform: uppercase;
-  text-shadow: 0px 0px 12px rgb(255, 251, 0), 0px 0px 12px #fff;
+  text-shadow: 0px 0px 12px rgb(0, 255, 213), 0px 0px 12px #fff;
   font-size: 21px;
   cursor: pointer;
-  background-color: rgb(204, 92, 1);
+  background-color: rgb(0, 87, 90);
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   animation: blur 8s ease-in-out;

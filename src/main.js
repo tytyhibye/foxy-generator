@@ -23,9 +23,9 @@ $(document).ready(function () {
         );
       }
     }
-    $('#results').fadeIn(1500);
+    $('#results').fadeIn(2500);
     $('#foxButton').fadeOut(300);
-    $('#wizButton').fadeIn(1500);
+    $('#wizButton').show();
   });
   $('#wizButton').click(function () {
     let wizzy = new Wizzy();
@@ -42,11 +42,11 @@ $(document).ready(function () {
       }
     });
     $('#wizButton').fadeOut(300);
-    $('#resetButton').fadeIn(1500);
+    $('#resetButton').show();
   });
   $('#resetButton').click(function () {
     $('#results').fadeOut(300);
-    $('#foxButton').fadeIn(1500);
+    $('#foxButton').show();
     $('#resetButton').fadeOut(300);
     $('#showName').text("");
   });
