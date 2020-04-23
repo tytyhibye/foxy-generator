@@ -23,9 +23,9 @@ $(document).ready(function () {
         );
       }
     }
-    $('#results').show();
+    $('#results').fadeIn(1700);
     $('#foxButton').hide();
-    $('#wizButton').show();
+    $('#wizButton').fadeIne(1700);
   });
   $('#wizButton').click(function () {
     let wizzy = new Wizzy();
@@ -42,7 +42,7 @@ $(document).ready(function () {
       }
     });
     $('#wizButton').hide();
-    $('#resetButton').show();
+    $('#resetButton').fadeIn(1700);
   });
   // $('#resetButton').click(function () {
   //   $('#results').hide();
