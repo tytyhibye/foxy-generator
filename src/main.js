@@ -23,8 +23,8 @@ $(document).ready(function () {
         );
       }
     }
-    $('#results').fadeIn(2500);
-    $('#foxButton').fadeOut(300);
+    $('#results').show();
+    $('#foxButton').hide();
     $('#wizButton').show();
   });
   $('#wizButton').click(function () {
@@ -41,13 +41,13 @@ $(document).ready(function () {
         $('#showName').text(nameLink);
       }
     });
-    $('#wizButton').fadeOut(300);
+    $('#wizButton').hide();
     $('#resetButton').show();
   });
-  $('#resetButton').click(function () {
-    $('#results').fadeOut(300);
-    $('#foxButton').show();
-    $('#resetButton').fadeOut(300);
-    $('#showName').text("");
-  });
+  // $('#resetButton').click(function () {
+  //   $('#results').hide();
+  //   $('#foxButton').show();
+  //   $('#resetButton').hide();
+  //   $('#showName').text("");
+  // });
 });
