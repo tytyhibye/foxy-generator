@@ -16,9 +16,9 @@ $(document).ready(function () {
     function getElements(response) {
       if (response) {
         let imageLink = response.image;
-        $('.foxImage').html(`<img src=${imageLink}></img>`);
+        $('#foxImage').html(`<img src=${imageLink} width=60vw height=60vh>`);
       } else {
-        $('.foxImage').text(
+        $('#foxImage').text(
           'Uh oh, something went wrong. Please refresh and try again.'
         );
       }
@@ -38,7 +38,7 @@ $(document).ready(function () {
         let nameLink = response[index].name; 
         console.log(index);
         console.log(nameLink);
-        $('.showName').text(nameLink);
+        $('#showName').text(nameLink);
       }
     });
     $('#wizButton').fadeOut(300);
@@ -48,6 +48,6 @@ $(document).ready(function () {
     $('#results').fadeOut(300);
     $('#foxButton').fadeIn(1500);
     $('#resetButton').fadeOut(300);
-    $('.showName').text("");
-  })
+    $('#showName').text("");
+  });
 });

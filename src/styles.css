@@ -1,10 +1,144 @@
+body {
+  background-image: url("https://blog.hostbaby.com/wp-content/uploads/2014/03/Trees_1920x1234.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  padding: auto;
+}
+.jumbotron {
+  background-image: url("https://image.freepik.com/free-vector/ocean-view-edge-forest-illustration_80802-126.jpg");
+  background-color: rgba(240, 248, 255, 0);
+  background-size: cover;
+}
 img {
   width: 60%;
+  height: auto;
   margin: 0 auto;
 }
+#header {
+  width: auto;
+
+}
+.animated {
+  -webkit-animation-duration: 7s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated2 {
+  -webkit-animation-duration: 3s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes bounceInDown {
+  0% {
+     opacity: 0;
+     -webkit-transform: translateY(-2000px);
+  }
+  60% {
+     opacity: 1;
+     -webkit-transform: translateY(30px);
+  }
+  80% {
+     -webkit-transform: translateY(-10px);
+  }
+  100% { 
+     -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes bounceInDown {
+  0% {
+     opacity: 0;
+     transform: translateY(-2000px);
+  }
+  60% {
+     opacity: 1;
+     transform: translateY(30px);
+  }
+  80% {
+     transform: translateY(-10px);
+  }
+  100% {
+     transform: translateY(0);
+  }
+}
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  animation-name: bounceInDown;
+}
+
+#titleText {
+  background-repeat: no-repeat;
+  font-family: Georgia, fantasy;
+  color: rgb(230, 161, 14);
+  text-shadow: 0 1px 0 #999999, 0 2px 0 #888888,
+           0 3px 0 #777777, 0 4px 0 #666666,
+           0 5px 0 #555555, 0 6px 0 #444444,
+           0 7px 0 #333333, 0 8px 7px rgba(0, 0, 0, 0.4),
+           0 9px 10px rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;
+}
+
+#subText {
+  font-family: Georgia;
+}
+#foxButton {
+  padding: auto;
+  width: auto;
+  height: auto;
+  color: rgb(248, 248, 215);
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 12px rgb(255, 251, 0), 0px 0px 12px #fff;
+  font-size: 21px;
+  cursor: pointer;
+  background-color: rgb(204, 92, 1);
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  animation: blur 8s ease-in-out;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #fff ;
+}
 #wizButton {
-  display: none;
+  display:  none;
+  padding: auto;
+  width: auto;
+  height: auto;
+  color: rgb(248, 248, 215);
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 12px rgb(255, 251, 0), 0px 0px 12px #fff;
+  font-size: 21px;
+  cursor: pointer;
+  background-color: rgb(204, 92, 1);
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  animation: blur 8s ease-in-out;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #fff ;
 }
 #resetButton {
   display: none;
+  padding: auto;
+  width: auto;
+  height: auto;
+  color: rgb(248, 248, 215);
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 12px rgb(255, 251, 0), 0px 0px 12px #fff;
+  font-size: 21px;
+  cursor: pointer;
+  background-color: rgb(204, 92, 1);
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  animation: blur 8s ease-in-out;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px #fff ;
 }
