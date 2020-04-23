@@ -25,7 +25,7 @@ $(document).ready(function () {
     }
     $('#results').fadeIn(1700);
     $('#foxButton').hide();
-    $('#wizButton').fadeIne(1700);
+    $('#wizButton').fadeIn(1700);
   });
   $('#wizButton').click(function () {
     let wizzy = new Wizzy();
