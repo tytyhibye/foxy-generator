@@ -31,18 +31,17 @@ $(document).ready(function () {
   $('#wizButton').click(function () {
     let wizzy = new Wizzy();
     const response = wizzy.getWizName();
-    getElements(response);
-    console.log('response: ', response);
-    function getElements(response) {
+    // console.log('response: ', response);
+    // getElements(response);
+    response.then(function getElements(response) {
       if (response) {
         let index = wizzy.randomNumber(parseInt(response.length));
-        let nameLink = response[index].name;
+        let nameLink = response[index].name; 
         console.log(index);
         console.log(nameLink);
         $('.showName').text(nameLink);
       }
-      // wizzy.randomNumber(response.length)
-    }
+    })
   });
 });
 
