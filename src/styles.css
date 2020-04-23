@@ -2,3 +2,9 @@ img {
   width: 60%;
   margin: 0 auto;
 }
+#wizButton {
+  display: none;
+}
+#resetButton {
+  display: none;
+}

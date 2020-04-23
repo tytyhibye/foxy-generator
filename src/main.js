@@ -16,8 +16,6 @@ $(document).ready(function () {
     function getElements(response) {
       if (response) {
         let imageLink = response.image;
-        // let name = response[1].name;
-        // $().html(`<img src=${imageLink} />`)
         $('.foxImage').html(`<img src=${imageLink}></img>`);
       } else {
         $('.foxImage').text(
@@ -25,9 +23,10 @@ $(document).ready(function () {
         );
       }
     }
+    $('#results').fadeIn(1500);
+    $('#foxButton').fadeOut(300);
+    $('#wizButton').fadeIn(1500);
   });
-  // $('#foxButton').fadeOut(300);
-  // $('#wizButton').fadeIn(1500);
   $('#wizButton').click(function () {
     let wizzy = new Wizzy();
     const response = wizzy.getWizName();
@@ -41,10 +40,14 @@ $(document).ready(function () {
         console.log(nameLink);
         $('.showName').text(nameLink);
       }
-    })
+    });
+    $('#wizButton').fadeOut(300);
+    $('#resetButton').fadeIn(1500);
   });
+  $('#resetButton').click(function () {
+    $('#results').fadeOut(300);
+    $('#foxButton').fadeIn(1500);
+    $('#resetButton').fadeOut(300);
+    $('.showName').text("");
+  })
 });
-
-// $2a$10$BU9J1FskYFj9Tr2aWZ5Rw.3oU/34XYSJhNMGNUBF01RL7u2VTXWVa
-// https://www.potterapi.com/?key=2a$10$BU9J1FskYFj9Tr2aWZ5Rw.3oU/34XYSJhNMGNUBF01RL7u2VTXWVa#character-routes
-// {"image":"http:\/\/randomfox.ca\/images\/121.jpg","link":"http:\/\/randomfox.ca\/?i=121"}
